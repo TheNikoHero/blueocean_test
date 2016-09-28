@@ -1,0 +1,4 @@
+[30-Jun-2016 07:41:17 UTC] PHP Notice:  Undefined variable: dbCon in /home/thenikohero/public_html/testdev/class/user.php on line 60
+[30-Jun-2016 07:41:17 UTC] PHP Fatal error:  Call to a member function errorInfo() on null in /home/thenikohero/public_html/testdev/class/user.php on line 60
+[30-Jun-2016 07:41:18 UTC] PHP Notice:  Undefined variable: dbCon in /home/thenikohero/public_html/testdev/class/user.php on line 60
+[30-Jun-2016 07:41:18 UTC] PHP Fatal error:  Call to a member function errorInfo() on null in /home/thenikohero/public_html/testdev/class/user.php on line 60

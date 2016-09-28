@@ -1,0 +1,287 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 29, 2016, 7:56:43 AM
+    Author     : TheNikoHero
+*/
+*{
+    margin:0;
+    padding:0;
+    font-family:helvetica, arial, sans-serif;
+    font-weight:lighter;
+}
+.clear{
+    clear:both;
+}
+#overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index:100;
+}
+.closeModal{
+    cursor:pointer;
+    background-color:lightgrey;
+    width:20%;
+    text-align:center;
+    padding:7px;
+}
+#modalBox{
+    position:fixed;
+    top:-10%;
+    left:30%;
+    right:30%;
+    background-color: whitesmoke;
+    padding:20px;
+    border:8px solid #ccc;
+    -moz-border-radius: 4px;
+    -webkit-border-radius:4px;
+    -khtml-border-radius:4px;
+    -moz-box-shadow: 0 1px 5px #333;
+    -webkit-box-shadow: 0 1px 5px #333;
+    z-index:101;
+    display: none;
+    overflow-y:scroll;
+}
+
+.modalChecker img{
+    max-width:100%;
+}
+.bad_response{
+    margin:10px 0px;
+    padding:4px 7px;
+    background-color:#f44336;
+    color:white;
+    text-align:center;
+}
+.text_succes{
+    margin:10px 0px;
+    padding:4px 7px;
+    background-color:#4CAF50;
+    color:white;
+    text-align:center;
+}
+#signup_link{
+    display:block;
+    margin-top:10px;
+}
+header{
+    width:100%;
+    min-height:70px;
+    background-color:#003954;
+    box-shadow:2px 1px 4px grey;
+}
+#wrapper{
+    width:90%;
+    margin:10px auto;
+    box-shadow:1px 1px 4px grey;
+}
+.header_wrapper{
+    width:90%;
+    margin:0 auto;
+}
+header #title_tagline{
+    float:left;
+}
+header h1{
+    color:whitesmoke;
+    padding:15px 0 0 17px;
+    font-size:41px;
+    letter-spacing: 10px;
+    font-style:italic;
+}
+header p{
+    color:whitesmoke;
+    width:450px;
+    text-align:right;
+    font-style:italic;
+    padding:7px 0 15px 0;
+}
+header nav{
+    float:right;
+    margin-top:40px;
+}
+header nav ul li{
+    display:inline-block;
+    margin-right:10px;
+}
+header nav ul li a{
+    color:white;
+    font-size:17px;
+    -webkit-transition: background-color 100ms ease-out .4s;
+    -moz-transition: background-color 100ms ease-out .4s;
+    -o-transition: background-color 100ms ease-out .4s;
+    transition: background-color  ease-out .4s;
+    background-color:#081E33;
+    padding:10px 20px;
+    text-decoration:none;
+}
+header nav ul li a:hover{
+    background-color:#12799B;
+    box-shadow:1px 1px 4px #152D3F;
+}
+
+.flex_box_user{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+}
+.flex_box_user #created_content{
+    padding:20px 10px 20px 10px;
+    width:300px;
+    background-color:whitesmoke;
+    text-align:center;
+    border-left:1px solid lightgrey;
+    max-height:500px;
+    overflow-y:scroll;
+    text-align:left;
+}
+.flex_box_user .content_box{
+    border-bottom: 1px solid lightgrey;
+    width:98%;
+    padding:10px 0;
+    margin:0 auto 10px;
+}
+.flex_box_user .content_box h3{
+    width:100%;
+    font-size:21px;
+    font-weight:bold;
+}
+.flex_box_user .content_box .created_content_date{
+    margin-bottom:7px;
+    color:grey;
+    font-size:14px;
+}
+
+.content_news{
+    width:500px;
+    margin:0 auto;
+    text-align:center;
+}
+.content_news .content_box{
+    border-bottom: 1px solid lightgrey;
+    width:98%;
+    padding:10px 0;
+    margin:0 auto 10px;
+    cursor:pointer;
+}
+.content_news .content_box h3{
+    width:100%;
+    font-size:21px;
+    font-weight:bold;
+}
+.content_news .content_box .created_content_date{
+    margin-bottom:7px;
+    color:grey;
+    font-size:14px;
+}
+.content_news .content_box img{
+    max-width:100%;
+}
+
+
+#create_form{
+    width:200px;
+    padding:20px 0 20px 20px;
+}
+#create_form textarea{
+    width:300px;
+    height:200px;
+    padding:10px 7px;
+    background-color:whitesmoke;
+}
+#create_form input[type=text]{
+    width:300px;
+}
+
+#login_form{
+    width:200px;
+    margin:0 auto;
+    text-align:center;
+    padding:20px 0px;
+}
+#login_form div, #create_form div{
+    margin-bottom:20px;
+}
+#login_form div input, #create_form div input{
+    padding:10px 14px;
+    border:2px solid transparent;
+    background-color:whitesmoke;
+}
+input:focus{
+    outline:none;
+    border: 2px solid #003954 !important;  
+}
+
+#login_form input[type=submit]{
+    border:none;
+    padding:7px 17px;
+
+    //for the input submit, background color
+    -webkit-transition: background-color 100ms ease-out .4s;
+    -moz-transition: background-color 100ms ease-out .4s;
+    -o-transition: background-color 100ms ease-out .4s;
+    transition: background-color  ease-out .4s;
+
+    //for the input submit, font color
+    -webkit-transition: color 100ms ease-out .4s;
+    -moz-transition: color 100ms ease-out .4s;
+    -o-transition: color 100ms ease-out .4s;
+    transition: color  ease-out .4s;
+    color:black;
+}
+
+#login_form input[type=submit]:hover{
+    background-color:#003954;
+    color:white;
+}
+
+
+@media (max-width:740px) {
+    header #title_tagline{
+        display: block !important;
+        float: none !important;
+    }
+    header h1{
+        color: whitesmoke;
+        padding: 15px 0 0 17px;
+        text-align:center;
+        font-size: 41px;
+        letter-spacing: 0px; 
+        font-style: italic;
+    }
+    header p{
+        color: whitesmoke;
+        width:100%;
+        text-align: center;
+        font-style: italic;
+        padding: 7px 0 15px 0;
+    }
+    header nav{
+        margin:20px 0 20px 0;
+        display: block !important;
+        width: 100%;
+    }
+    header nav ul{
+        text-align:center;
+    }
+
+    .content_news{
+        width:100% !important;
+    }
+
+    #modalBox{
+        overflow:scroll;
+        max-width:80% !important;
+        width:80%;
+        left:0;
+        right:0;
+        border:none;
+    }
+}
