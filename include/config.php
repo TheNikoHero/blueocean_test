@@ -1,9 +1,9 @@
 <?php
 
 $host = "localhost";
-$hostUsername = 'nikolajdev';
-$password = '199629Nikolaj';
-$database = "testdev_blueocean";
+$hostUsername = 'xxxxxxxx';
+$password = 'xxxxxxxx';
+$database = "xxxxxxx";
 
 try {
     $dbCon = new PDO("mysql:host={$host};dbname={$database};charset=utf8", $hostUsername, $password);
